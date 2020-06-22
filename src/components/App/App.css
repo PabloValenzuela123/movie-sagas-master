@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 5px;
+  background-color: rgb(251, 63, 63);
 }
 
 
@@ -21,4 +23,9 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.editInput{
+  width: 400px;
+  height: 200px;
 }

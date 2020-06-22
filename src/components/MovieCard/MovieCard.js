@@ -60,7 +60,6 @@ class MovieCard extends React.Component {
         this.setState(state => ({ expanded: !state.expanded }));
     };
 
-    //When the Details button is selected, this function captures the ID of the selection and dispatches it to the rootSaga
     //to trigger the DetailsReducer, and then advances the user to the Details view.
     handleSubmit = (movieId) => {
         console.log('in handleSubmit', movieId);

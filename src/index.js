@@ -49,7 +49,6 @@ function* getDetailSaga(action) {
     }
 }
 
-//this generator function manages requests to query to DB for all the genres associated with a specific film 
 //it takes the query results and sends to the genresReducer to display on the DOM in the Details view
 function* getGenreSaga(action) {
     console.log('in getGenreSaga');
@@ -57,7 +56,6 @@ function* getGenreSaga(action) {
     yield put({ type: 'GENRE_RESPONSE', payload: response.data });
 }
 
-//this generator function manages requests to update information from the Edit view inputs to the DB for a film being edited 
 //Currently it takes the query results and attempts to send them back to the rootSaga to trigger the detailsSaga 
 //to re-render the updated film info to display on the DOM in the Details view. This second part is not working as of now.
 function* editMovieSaga(action) {

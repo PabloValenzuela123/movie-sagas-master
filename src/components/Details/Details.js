@@ -22,7 +22,7 @@ class Details extends Component {
                 <img src={this.props.details.poster} />
                 <p>{this.props.details.description}</p>
                 <h4>Genre</h4>
-                {/*The genre(s) arrives from index.js in the genresReducer as an array. So here I'm mapping through the array to capture all associated genres*/}
+                {/*Here I'm mapping through the array to capture all associated genres*/}
                 {this.props.genres.map((genre) => {
                     return (
                         <p>{genre.name}</p>
